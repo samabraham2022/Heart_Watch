@@ -7,7 +7,6 @@ def decrypt(encrypted_message, key):
     decrypted_message = f.decrypt(encrypted_message)
     return decrypted_message.decode()
 
-
 receiver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 receiver_socket.bind(('localhost', 8888))
 receiver_socket.listen(1)
