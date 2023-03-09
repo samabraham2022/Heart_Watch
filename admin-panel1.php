@@ -244,7 +244,7 @@ if(isset($_POST['docsub1']))
               <table class="table table-hover">
                 <thead>
                   <tr>
-                  <th scope="col">Patient ID</th>
+                  <th scope="col">Room_Number</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Gender</th>
@@ -260,7 +260,7 @@ if(isset($_POST['docsub1']))
                     $query = "select * from patreg";
                     $result = mysqli_query($con,$query);
                     while ($row = mysqli_fetch_array($result)){
-                      $pid = $row['pid'];
+                      $Room_Number = $row['Room Number'];
                       $fname = $row['fname'];
                       $lname = $row['lname'];
                       $gender = $row['gender'];
@@ -269,7 +269,7 @@ if(isset($_POST['docsub1']))
                       $Heart_Rate = $row['Heart Rate'];
                       
                       echo "<tr>
-                        <td>$pid</td>
+                        <td>$Room_Number</td>
                         <td>$fname</td>
                         <td>$lname</td>
                         <td>$gender</td>
@@ -298,7 +298,7 @@ if(isset($_POST['docsub1']))
                 <thead>
                   <tr>
                   <th scope="col">Doctor</th>
-                    <th scope="col">Patient ID</th>
+                    <th scope="col">Room_Number</th>
                     <th scope="col">Appointment ID</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
@@ -317,7 +317,7 @@ if(isset($_POST['docsub1']))
                     $result = mysqli_query($con,$query);
                     while ($row = mysqli_fetch_array($result)){
                       $doctor = $row['doctor'];
-                      $pid = $row['pid'];
+                      $Room_Number = $row['Room_Number'];
                       $ID = $row['ID'];
                       $fname = $row['fname'];
                       $lname = $row['lname'];
@@ -330,7 +330,7 @@ if(isset($_POST['docsub1']))
                       
                       echo "<tr>
                         <td>$doctor</td>
-                        <td>$pid</td>
+                        <td>$Room_Number</td>
                         <td>$ID</td>
                         <td>$fname</td>
                         <td>$lname</td>
@@ -367,7 +367,7 @@ if(isset($_POST['docsub1']))
                 <thead>
                   <tr>
                   <th scope="col">Appointment ID</th>
-                  <th scope="col">Patient ID</th>
+                  <th scope="col">Room_Number</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Gender</th>
@@ -392,7 +392,7 @@ if(isset($_POST['docsub1']))
                   ?>
                       <tr>
                         <td><?php echo $row['ID'];?></td>
-                        <td><?php echo $row['pid'];?></td>
+                        <td><?php echo $row['Room_Number'];?></td>
                         <td><?php echo $row['fname'];?></td>
                         <td><?php echo $row['lname'];?></td>
                         <td><?php echo $row['gender'];?></td>
