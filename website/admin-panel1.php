@@ -148,7 +148,7 @@ if(isset($_POST['docsub1']))
         <div class="container-fluid container-fullw bg-white" >
               <div class="row">
                
-                <div class="col-sm-4" style="left: 35 %">
+                <div class="col-sm-4" style="left: 35%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
@@ -234,11 +234,6 @@ if(isset($_POST['docsub1']))
     <div class="tab-pane fade" id="list-pat" role="tabpanel" aria-labelledby="list-pat-list">
 
        <div class="col-md-8">
-      <form class="form-group" action="patientsearch.php" method="post">
-        <div class="row">
-        <div class="col-md-10"><input type="text" name="patient_contact" placeholder="Enter Contact" class = "form-control"></div>
-        <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-primary" value="Search"></div></div>
-      </form>
     </div>
         
               <table class="table table-hover">
