@@ -13,6 +13,8 @@ include("header.php");
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <link rel="stylesheet" type="text/css" href="style2.css">
 

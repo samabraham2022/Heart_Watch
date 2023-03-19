@@ -10,6 +10,8 @@
 
 <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 <style >
      .form-control {
