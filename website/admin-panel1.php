@@ -5,7 +5,7 @@
 
 </head>
 <?php
-$con = mysqli_connect("localhost", "root", "", "myhmsdb");
+$con = mysqli_connect("localhost", "root", "samgeorge", "myhmsdb");
 
 include('newfunc.php');
 
@@ -245,6 +245,7 @@ if (isset($_POST['docsub1'])) {
                   <th scope="col">Email</th>
                   <th scope="col">Contact</th>
                   <th scope="col">Heart_Rate</th>
+                  <th scope="col">Possible Heart Attack</th>
                 </tr>
               </thead>
               <script>
@@ -270,7 +271,10 @@ if (isset($_POST['docsub1'])) {
                             tableCell.textContent = row[prop];
                             tableRow.appendChild(tableCell);
                           }
-                          if (parseInt(row['Heart_Rate']) < 80) {
+                          if (parseInt(row['Heart_Rate']) < 60) {
+                            tableRow.style.backgroundColor = 'orange';
+                          }
+                          if (row['Heart_Attack'] == "True") {
                             tableRow.style.backgroundColor = 'red';
                           }
                           // add the row to the table body

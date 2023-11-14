@@ -1,6 +1,7 @@
 <html>
 <head>
-	<title>Hospital - Ruby D</title>
+	<title>Hospital 
+  </title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 <link rel="stylesheet" type="text/css" href="style1.css">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
@@ -63,14 +64,6 @@ function checklen()
           <li class="nav-item" style="margin-right: 40px;">
             <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>HOME</h6></a>
           </li>
-  
-          <li class="nav-item" style="margin-right: 40px;">
-            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>ABOUT US</h6></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="contact.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>CONTACT</h6></a>
-          </li>
         </ul>
       </div>
     </div>
@@ -81,7 +74,7 @@ function checklen()
 <div class="container register" style="font-family: 'IBM Plex Sans', sans-serif;">
                 <div class="row">
                     <div class="col-md-3 register-left" style="margin-top: 10%;right: 5%">
-                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        
                         <h3>Welcome</h3>
                        
                     </div>

@@ -7,7 +7,7 @@ import mysql.connector
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="",
+    password="samgeorge",
     database="myhmsdb"
 )
 
@@ -17,7 +17,6 @@ def collectpid():
     mycursor.execute("SELECT pid FROM patreg")
     pid_list = [row[0] for row in mycursor.fetchall()]
     return pid_list
-
 
 def encrypt(message, key):
     f = Fernet(key)
@@ -30,10 +29,11 @@ while True:
     patient_list = collectpid()
     patientid = random.choice(patient_list)
     value = random.randint(40, 100)
-    message = encrypt(str(patientid)+","+str(value)+","+str(datetime.timestamp(
+    ecg = random.randint(0, 100)
+    message = encrypt(str(patientid)+","+str(value)+","+str(ecg)+","+str(datetime.timestamp(
         datetime.now())), 'iVvNNUzoA2fEM_b-02z9W8XvskMXkw_cMMJ51YGTZn0=')
     device_socket.send(message)
-    time.sleep(0.3)
+    time.sleep(0.1)
 
 # Close the socket connection
 device_socket.close()

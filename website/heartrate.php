@@ -2,7 +2,7 @@
 // Connect to database
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "samgeorge";
 $dbname = "myhmsdb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
